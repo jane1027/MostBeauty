@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/progress"/>
+    <RelativeLayout
+        android:id="@+id/none_rl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_wifi_icon_white"/>
+        <TextView
+            android:id="@+id/no_network_tv"
+            android:textColor="#888"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:text="点击刷新下"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#888"
+            android:layout_above="@id/no_network_tv"
+            android:layout_alignLeft="@id/no_network_tv"
+            android:text="网络迷路了"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_havething_bag"
+            style="@style/havething_top_back">
+
+            <TextView
+                android:id="@+id/tv_havething_bag_text"
+                style="@style/havething_top_tv"
+                android:text="全部"/>
+
+            <ImageView
+                android:id="@+id/iv_havething_bag_arrows"
+                style="@style/havething_top_iv"
+                android:src="@drawable/icon_category"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/havething_bag_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>

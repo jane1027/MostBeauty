@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 我的画报 -->
+    <RelativeLayout
+        android:id="@+id/paint"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/icon_my_daily"
+            android:src="@drawable/icon_my_daily"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/icon_my_daily"
+            android:text="@string/my_daily"/>
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 关注的设计师 -->
+    <RelativeLayout
+        android:id="@+id/design"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/ic_mine_attention_normal"
+            android:src="@drawable/ic_mine_attention_normal"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_mine_attention_normal"
+            android:text="@string/my_attention"/>
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 我的心愿单 -->
+    <RelativeLayout
+        android:id="@+id/wish"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/ic_mine_wish_list_normal"
+            android:src="@drawable/ic_mine_wish_list_normal"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_mine_wish_list_normal"
+            android:text="@string/my_dream"/>
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 消息中心 -->
+    <RelativeLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/ic_bottom_message_normal"
+            android:src="@drawable/ic_bottom_message_normal"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_bottom_message_normal"
+            android:text="@string/my_news"/>
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 建议与问题反馈 -->
+    <RelativeLayout
+        android:id="@+id/suggest_question"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/ic_bottom_comment"
+            android:src="@drawable/ic_bottom_comment"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_bottom_comment"
+            android:text="@string/my_faceback"
+            />
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 最美团队 -->
+    <RelativeLayout
+        android:id="@+id/other_app"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/mine_icon_style"
+            android:id="@+id/ic_mine_zuimei"
+            android:src="@drawable/ic_mine_zuimei"/>
+
+        <TextView
+            style="@style/mine_text_style"
+            android:text="@string/my_mostbueaty"
+            android:layout_toRightOf="@id/ic_mine_zuimei"
+            />
+
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+</LinearLayout>

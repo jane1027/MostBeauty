@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 个人信息 -->
+    <RelativeLayout
+        android:id="@+id/self_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/mine_text_style"
+            android:text="@string/my_infomation"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mine_portrait_civ"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_mine_portrait"
+            app:civ_border_color="@color/dark"
+            />
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 清理缓存 -->
+    <RelativeLayout
+        android:id="@+id/clean"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_mine_attention_normal"
+            android:text="@string/my_clear"/>
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="50M"/>
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 性别 -->
+    <RelativeLayout
+        android:id="@+id/retroaction"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_mine_wish_list_normal"
+            android:text="@string/my_facaback"/>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 生日 -->
+    <RelativeLayout
+        android:id="@+id/good"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_bottom_message_normal"
+            android:text="@string/my_good"/>
+
+
+        <TextView
+            android:id="@+id/birth_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="@string/my_good"/>
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 邮箱 -->
+    <RelativeLayout
+        android:id="@+id/recommend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/mine_text_style"
+            android:layout_toRightOf="@id/ic_bottom_comment"
+            android:text="@string/my_recommend"
+            />
+
+
+        <TextView
+            android:id="@+id/info_email_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line"/>
+
+    <!-- 绑定手机 -->
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/mine_text_style"
+            android:text="@string/my_about_us"
+            android:layout_toRightOf="@id/ic_mine_zuimei"
+            />
+
+
+        <TextView
+            android:id="@+id/info_phone_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        <ImageView
+            style="@style/mine_indicate_style"
+            android:src="@drawable/ic_common_arrow_pressed"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        />
+    <include layout="@layout/divide_line"/>
+</LinearLayout>

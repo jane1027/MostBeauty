@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/progress"/>
+    <LinearLayout
+        android:id="@+id/havething_like_lv"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_margin="8dp"
+            android:src="@color/bot_text_color_selected"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="180dp"/>
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@color/background_tab_pressed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="180dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

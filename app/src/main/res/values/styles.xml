@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:statusBarColor">@color/black</item>-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="bottom_ll_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="bottom_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/bot_textcolor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:clickable">true</item>-->//抢焦点
+    </style>
+
+    <string-array name="havething_titles">
+        <item>Daily</item>
+        <item>首饰</item>
+        <item>包袋</item>
+        <item>鞋履</item>
+        <item>Men</item>
+        <item>配饰</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="designer">
+        <item>推荐</item>
+        <item>最受欢迎</item>
+        <item>独立设计师</item>
+        <item>大牌设计师</item>
+    </string-array>
+
+    <style name="mine_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">#383636</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="mine_indicate_style">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="mine_icon_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">1dp</item>
+    </style>
+
+    <!-- 上头横幅 -->
+    <style name="home_pic_mask_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#d6d2d2</item>
+    </style>
+    <!--havething的头部文字-->
+    <style name="havething_top_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!--havething的头部箭头-->
+    <style name="havething_top_iv">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <!--havething的头部背景-->
+    <style name="havething_top_back">
+        <item name="android:background">#333</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--缓冲图-->
+    <style name="progress">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+
+
+</resources>

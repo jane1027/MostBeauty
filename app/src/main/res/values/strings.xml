@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MostBeautiful</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="load_paint">画报</string>
+    <string name="load_thing">有物</string>
+    <string name="load_design">设计师</string>
+    <string name="load_mine">我</string>
+
+    <string-array name="design_title">
+        <item>我的关注</item>
+        <item>推荐</item>
+        <item>最受欢迎</item>
+        <item>独立设计师</item>
+        <item>大牌设计师</item>
+    </string-array>
+
+    <string name="my_daily">我的画报</string>
+    <string name="my_attention">关注的设计师</string>
+    <string name="my_dream">我的心愿单</string>
+    <string name="my_news">消息中心</string>
+    <string name="my_faceback">建议与问题反馈</string>
+    <string name="my_mostbueaty">最美团队的另一个产品：最美应用</string>
+    <string name="my_infomation">个人信息</string>
+    <string name="my_clear">清除缓存</string>
+    <string name="my_facaback">反馈</string>
+    <string name="my_good">好评</string>
+    <string name="my_recommend">推荐给好友</string>
+    <string name="my_about_us">关于我们</string>
+    <string name="change_icon">更改头像</string>
+    <string name="my_name">昵称</string>
+    <string name="my_sex">性别</string>
+    <string name="my_birthday">生日</string>
+    <string name="my_email">邮箱</string>
+    <string name="my_phone">绑定手机</string>
+
+
+</resources>

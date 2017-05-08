@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.m520it.mostbeautiful.view.ObservableWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"/>
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:src="@drawable/ic_circle_back_normal"/>
+
+    <RelativeLayout
+        android:id="@+id/designer_rl"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_designer"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/designer_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_mine_portrait"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/designer_iv"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/loaction_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/designer_iv"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="8dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

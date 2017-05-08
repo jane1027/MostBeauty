@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/whole_page_rl"
+
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout
+        android:id="@+id/header_ll"
+        android:layout_below="@id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#222">
+
+        <ImageButton
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:src="@drawable/common_icon_back_normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="用户反馈"
+            android:textColor="#888"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contect_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_ll"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        >
+
+        <TextView
+            android:id="@+id/contact_tv"
+            android:layout_width="235.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30.0dip"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center_vertical"
+            android:text="填写联系方式"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_common_arrow_pressed"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/contect_rl"
+        android:background="#ccc"/>
+
+
+    <RelativeLayout
+        android:id="@+id/conversation_list_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/contect_rl">
+
+
+        <RelativeLayout
+            android:id="@+id/reply_content_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="发送"/>
+
+            <EditText
+                android:id="@+id/reply_content_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/send_btn"
+                android:background="@drawable/inputline"
+                android:hint="写下您建议和反馈"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/reply_list_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10.0dip"
+            android:layout_above="@id/reply_content_rl"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:choiceMode="none"
+            android:divider="@null"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

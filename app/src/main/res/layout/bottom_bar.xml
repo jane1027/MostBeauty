@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.m520it.mostbeautiful.view.BottomBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"  >
+
+    <LinearLayout
+        android:id="@+id/frag_main_ll" 
+        style="@style/bottom_ll_style" >
+
+        <ImageView
+            android:id="@+id/frag_main_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/paint_bot_bar" />
+
+        <TextView
+            android:id="@+id/frag_main"
+            style="@style/bottom_text_style"
+            android:text="@string/load_paint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_category_ll" 
+        style="@style/bottom_ll_style" >
+
+        <ImageView
+            android:id="@+id/frag_category_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/hava_thing_bot_bar" />
+
+        <TextView
+            android:id="@+id/frag_category"
+            style="@style/bottom_text_style"
+            android:text="@string/load_thing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_shopcar_ll" 
+        style="@style/bottom_ll_style" >
+
+        <ImageView
+            android:id="@+id/frag_shopcar_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/designer_bot_bar" />
+
+        <TextView
+            android:id="@+id/frag_shopcar"
+            style="@style/bottom_text_style"
+            android:text="@string/load_design" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_mine_ll"
+        style="@style/bottom_ll_style" >
+
+        <ImageView
+            android:id="@+id/frag_mine_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/mine_bot_bar" />
+
+        <TextView
+            android:id="@+id/frag_mine"
+            style="@style/bottom_text_style"
+            android:text="@string/load_mine" />
+    </LinearLayout>
+
+</com.m520it.mostbeautiful.view.BottomBar>

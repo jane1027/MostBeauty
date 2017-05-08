@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:background="#ff000000"
+                android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/desiger_one"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="设计师 * 作品"
+        android:textColor="#ffffffff"
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/desiger_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desiger_one"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/desiger_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_mine_portrait"
+            app:civ_border_color="@color/dark"/>
+
+        <TextView
+            android:id="@+id/desiger_name_tv"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desiger_icon"
+            android:text="Sarah Magid"
+            android:textSize="20sp"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/desiger_lable_tv"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desiger_name_tv"
+            android:text="Sarah Magid 创始人"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/attention_click"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/desiger_lable_tv"
+            android:text="+关注"
+            android:textSize="20sp"
+            android:background="@drawable/click_selector"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/desiger_description_tv"
+            android:layout_below="@id/attention_click"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="5"
+            android:text="Sarah Magid 是纽约的戏装珠宝设计师，她从活泼的半珍贵宝石颜色中获得灵感，并且以不同的方式去创造大胆，五彩缤纷的珠宝。她的灵感从明亮的颜色到现代艺术，甚至包括她的犹太祖母穿戴的丝巾，铭牌以及各种她的布鲁克林邻居街道艺术，还有她在阳光加州的童年回忆。她有15年的设计经验，曾经为 Henri Bendel，Coach, J. Crew, Etienne Aigner 等诸多大牌设计。她在 2013 年 创立自己的珠宝系列，因为她想把草稿本上的设想变成现实，而大部分草稿本上的设想和她服务过的大牌都不相合。粗犷的形状，明亮的颜色以及微妙的细节。这么多年在时尚产业闯荡让她结识了许多很好的团队和合作伙伴，让她的梦想能够成为现实。她对设计的爱也延伸到了食物。当她喜欢穿高跟胜过头套时，2009 年 她出版了一本厨艺书叫做：”有机的和雅致的”，用细节描述了受珠宝启发的蛋糕和各种有机处理方式。
+⏎ "/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/desiger_description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/desiger_image_one"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/no_wifi_icon_white"/>
+
+            <ImageView
+                android:id="@+id/desiger_image_two"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/no_wifi_icon_white"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+        <TextView
+            android:layout_below="@id/desiger_item"
+            android:id="@+id/desiger_comment_tv"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a0d6d2d2"
+            android:text="评论（4）"/>
+
+
+</RelativeLayout>

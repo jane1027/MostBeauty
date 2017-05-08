@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#00FFFFFF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="bot_text_color_normal">#8b8a8a</color>
+    <color name="bot_text_color_selected">#414141</color>
+    <color name="white">#dcd9d9</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+
+    <!-- MineFragment 页面圆形头像颜色 -->
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+    <!--popWindow字体颜色-->
+    <color name="choose_type_selected">#333333</color>
+    <color name="choose_type_nor">#EEEEEE</color>
+
+</resources>
+
